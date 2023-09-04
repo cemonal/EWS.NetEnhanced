@@ -10,7 +10,7 @@ This library is based on the [EWS Managed API](https://github.com/OfficeDev/ews-
 
 To clone this repository, use the following command:
 
-```shell
+```bash
 git clone https://github.com/cemonal/EWS.NetEnhanced.git
 ```
 
@@ -32,17 +32,25 @@ For detailed information about the Exchange Web Services and the EWS Managed API
 - Enhanced functionality and bug fixes compared to the original library
 - Updated dependencies and modern development practices
 
-## Usage
+## Usage Example
 
-TODO: Add usage instructions and code examples here.
+Here's an example of how you can use the `EwsCallerService` class to fetch emails with attachments:
+
+```csharp
+using EWS.NetEnhanced;
+
+// Create an EWS client
+var service = new EwsCallerService(config.AppId, config.ClientSecret, config.TenantId, config.Scopes, config.EWSUrl, config.Email);
+
+// Fetch emails with attachments
+var mailsToReceive = service.GetEmails(request.Date, config.PageSize, true);
+```
+
+Please replace the values in the `config` object with your actual configuration settings.
 
 ## Contributions
 
 Contributions to this project are welcome! If you find any bugs, have feature requests, or want to contribute improvements, please feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
