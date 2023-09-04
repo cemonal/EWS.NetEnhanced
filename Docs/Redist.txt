@@ -1,0 +1,5 @@
+Distributable Code is identified as the following files and/or all of the files in the following directories:
+
+[installdirectory]\EWS.NetEnhanced.dll
+[installdirectory]\EWS.NetEnhanced.Auth.dll
+
