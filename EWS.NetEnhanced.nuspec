@@ -13,6 +13,7 @@
 		<repository type="git" url="https://github.com/cemonal/EWS.NetEnhanced" />
 		<copyright>Copyright 2023</copyright>
 		<dependencies>
+			<dependency id="Microsoft.Identity.Client" version="4.55.0" />
 			<dependency id="Opw.HttpExceptions" version="4.0.2" />
 			<dependency id="System.DirectoryServices" version="7.0.1" />
 			<dependency id="System.Security.Cryptography.Xml" version="7.0.1" />
